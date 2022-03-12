@@ -18,8 +18,8 @@ $text-color: #fff;
   background-color: $player-x-bg-color;
   border: 0;
   &:hover {
-    background-color: $player-x-bg-color;
     transform: scale(1.03);
+    box-shadow: 0 4px 17px rgb(0 0 0 / 35%);
   }
 }
 
@@ -27,8 +27,8 @@ $text-color: #fff;
   background-color: $player-o-bg-color;
   border: 0;
   &:hover {
-    background-color: $player-o-bg-color;
     transform: scale(1.03);
+    box-shadow: 0 4px 17px rgb(0 0 0 / 35%);
   }
 }
 
@@ -36,8 +36,8 @@ $text-color: #fff;
   background-color: $default-bg-color;
   border: 0;
   &:hover {
-    background-color: $default-bg-color;
     transform: scale(1.03);
+    box-shadow: 0 4px 17px rgb(0 0 0 / 35%);
   }
 }
 
