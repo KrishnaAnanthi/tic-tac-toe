@@ -1,6 +1,6 @@
 # TicTacToe
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.4.
+Tic-Tac-Toe is a game played between two players on a 3×3 board. The two players take turns to put pieces on the board. A single piece is put for each turn and piece once put does not move. A player wins the game by first lining three of his or her pieces in a straight line, no matter horizontal, vertical or diagonal. 
 
 ## Development server
 
