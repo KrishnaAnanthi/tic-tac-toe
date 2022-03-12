@@ -18,6 +18,6 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 Please find below the some of the screenshots of the application
 
-![Game](./game.png)
-![Game](./start.png)
-![Game](./xwon.png)
+![Game](./game.PNG)
+![Game](./start.PNG)
+![Game](./xwon.PNG)
