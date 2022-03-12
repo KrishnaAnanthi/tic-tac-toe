@@ -1,0 +1,105 @@
+$button-bg-color: #0423cc;
+$game-message-bg-color: rgb(226 230 234 / 85%);
+$game-message-text-color: #000000a6;
+$button-text-color: #fff;
+.wrapper {
+  grid-column: 2/3;
+  text-align: center;
+
+  .confirm {
+    margin: 1em 0;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.5em;
+  }
+
+  .header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .header .new-game {
+    grid-column-start: 3;
+  }
+
+  .box {
+    height: calc(10px + 15vh);
+  }
+
+  .game-message.game-won,
+  .game-message.game-over {
+    display: flex;
+  }
+
+  .game-message {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $game-message-bg-color;
+    z-index: 100;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    -webkit-animation: fade-in ease 3s;
+    -moz-animation: fade-in ease 3s;
+    animation: fade-in ease 3s;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+
+  .game-message p {
+    font-size: 3.5em;
+    font-weight: bold;
+    height: 0.8em;
+    line-height: 0.8em;
+    color: $game-message-text-color;
+  }
+
+  .new-game {
+    display: inline-block;
+    background: $button-bg-color;
+    border: 0;
+    border-radius: 3px;
+    padding: 0 20px;
+    text-decoration: none;
+    color: $button-text-color;
+    height: 40px;
+    line-height: 42px;
+    cursor: pointer;
+  }
+
+  @-webkit-keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-moz-keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}

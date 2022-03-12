@@ -1,0 +1,59 @@
+$player-x-bg-color: #28a745;
+$player-o-bg-color: #007bff;
+$default-bg-color: #ffc10780;
+$text-color: #fff;
+
+.box-button {
+  color: $text-color;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.player-x {
+  background-color: $player-x-bg-color;
+  border: 0;
+  &:hover {
+    background-color: $player-x-bg-color;
+    transform: scale(1.03);
+  }
+}
+
+.player-o {
+  background-color: $player-o-bg-color;
+  border: 0;
+  &:hover {
+    background-color: $player-o-bg-color;
+    transform: scale(1.03);
+  }
+}
+
+.empty-box {
+  background-color: $default-bg-color;
+  border: 0;
+  &:hover {
+    background-color: $default-bg-color;
+    transform: scale(1.03);
+  }
+}
+
+@media screen and (min-width: 20em) {
+  .box-button {
+    font-size: calc(2em + (1.3125 - 1) * ((100vw - 20em) / (80 - 20)));
+    line-height: calc(1.4em + (1.8 - 1.4) * ((100vw - 20em) / (80 - 20)));
+    font-family: sans-serif, Arial, Helvetica;
+  }
+}
+
+//for devices having width more than 1024
+@media (min-width: 80em) {
+  .box-button {
+    font-size: 3em; //now 1.3125em fr 21px.. for 22px => 1.375em
+    line-height: 1.8em;
+    font-family: sans-serif, Arial, Helvetica;
+  }
+}

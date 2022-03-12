@@ -1,0 +1,43 @@
+/* You can add global styles to this file, and also import other style files */
+/* Using Fluid Typography*/
+
+$background-color: #fff;
+$font-color: #000;
+@media screen and (min-width: 20em) {
+  body {
+    font-size: calc(1em + (1.3125 - 1) * ((100vw - 20em) / (80 - 20)));
+    line-height: calc(1.4em + (1.8 - 1.4) * ((100vw - 20em) / (80 - 20)));
+    font-family: sans-serif, Arial, Helvetica;
+    margin: 2em;
+  }
+}
+
+//for devices having width more than 1024
+@media (min-width: 80em) {
+  body {
+    font-size: 1.375em; //now 1.3125em fr 21px.. for 22px => 1.375em
+    line-height: 1.8em;
+    font-family: sans-serif, Arial, Helvetica;
+    margin: 2em;
+  }
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: $background-color;
+  color: $font-color;
+  height: 100%;
+}
+
+.disable-selection {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

@@ -1,0 +1,22 @@
+<div class="wrapper">
+  <!--<div class="header"> -->
+  <!--  comment this and addtext align center to game content -->
+  <section class="title">
+    <h1 class="disable-selection">Tic-Tac-Toe</h1>
+  </section>
+  <div class="disable-selection">Current Player : {{ player }} </div>
+
+  <a class="new-game confirm" (click)="newGame()">New Game</a>
+  <!--</div-->
+
+  <div class="game-message game-over disable-selection" *ngIf="isGameOver">
+    <p *ngIf="winner">Player {{ winner }} won</p>
+    <p *ngIf="!winner">It's a Draw</p>
+    <a class=" new-game" (click)="newGame()">New Game</a>
+  </div>
+  <confirmation-popup></confirmation-popup>
+  <main>
+    <app-box class="box" *ngFor="let value of boxes; let i = index" [value]="value" (click)="makeMove(i)">
+    </app-box>
+  </main>
+</div>
