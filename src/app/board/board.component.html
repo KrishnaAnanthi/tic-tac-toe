@@ -14,7 +14,6 @@
     <p *ngIf="!winner">It's a Draw</p>
     <a class=" new-game" (click)="newGame()">New Game</a>
   </div>
-  <confirmation-popup></confirmation-popup>
   <main>
     <app-box class="box" *ngFor="let value of boxes; let i = index" [value]="value" (click)="makeMove(i)">
     </app-box>
