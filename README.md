@@ -16,7 +16,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## Screenshots
 
-Please find below the some of the screenshots of the application
+Please find below some of the screenshots of the application
 
 ![Game](./start.PNG)
 ![Game](./game.PNG)
