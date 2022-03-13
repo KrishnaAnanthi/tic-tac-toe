@@ -2,6 +2,7 @@ $player-x-bg-color: #28a745;
 $player-o-bg-color: #007bff;
 $default-bg-color: #ffc10780;
 $text-color: #fff;
+$box-shadow-color: rgb(0 0 0 / 35%);
 
 .box-button {
   color: $text-color;
@@ -19,7 +20,7 @@ $text-color: #fff;
   border: 0;
   &:hover {
     transform: scale(1.03);
-    box-shadow: 0 4px 17px rgb(0 0 0 / 35%);
+    box-shadow: 0 0.25em 0.7em $box-shadow-color;
   }
 }
 
@@ -28,7 +29,7 @@ $text-color: #fff;
   border: 0;
   &:hover {
     transform: scale(1.03);
-    box-shadow: 0 4px 17px rgb(0 0 0 / 35%);
+    box-shadow: 0 0.25em 0.7em $box-shadow-color;
   }
 }
 
@@ -37,7 +38,7 @@ $text-color: #fff;
   border: 0;
   &:hover {
     transform: scale(1.03);
-    box-shadow: 0 4px 17px rgb(0 0 0 / 35%);
+    box-shadow: 0 0.25em 0.7em $box-shadow-color;
   }
 }
 
@@ -52,7 +53,7 @@ $text-color: #fff;
 //for devices having width more than 1024
 @media (min-width: 80em) {
   .box-button {
-    font-size: 3em; //now 1.3125em fr 21px.. for 22px => 1.375em
+    font-size: 3em;
     line-height: 1.8em;
     font-family: sans-serif, Arial, Helvetica;
   }

@@ -10,7 +10,6 @@ export class BoardComponent implements OnInit {
   winner: string;
   xIsNext = true;
   isGameOver = false;
-  // moveCount = 0;
 
   constructor() {}
 
@@ -36,7 +35,6 @@ export class BoardComponent implements OnInit {
     }
     this.winner = this.calculateWinner();
     if (this.boxes.every((element) => element !== null)) {
-      console.log(this.boxes.every((element) => element !== null));
       this.isGameOver = true;
     }
   }
