@@ -28,19 +28,27 @@ export class BoardComponent implements OnInit {
     return this.xIsNext ? 'X' : 'O';
   }
 
-  makeMove(idx: number) {
-    if (!this.boxes[idx]) {
-      this.boxes.splice(idx, 1, this.player);
-      this.xIsNext = !this.xIsNext;
-    }
+  makeMove(index: number) {
+    this.updatePlayer(index);
     this.winner = this.calculateWinner();
+    this.checkIfGameIsOver();
+  }
+
+  checkIfGameIsOver() {
     if (this.boxes.every((element) => element !== null)) {
       this.isGameOver = true;
     }
   }
 
+  updatePlayer(index) {
+    if (!this.boxes[index]) {
+      this.boxes.splice(index, 1, this.player);
+      this.xIsNext = !this.xIsNext;
+    }
+  }
+
   calculateWinner() {
-    const lines = [
+    const winningPositions = [
       [0, 1, 2],
       [3, 4, 5],
       [6, 7, 8],
@@ -50,8 +58,8 @@ export class BoardComponent implements OnInit {
       [0, 4, 8],
       [2, 4, 6],
     ];
-    for (let i = 0; i < lines.length; i++) {
-      const [a, b, c] = lines[i];
+    for (let i = 0; i < winningPositions.length; i++) {
+      const [a, b, c] = winningPositions[i];
       if (
         this.boxes[a] &&
         this.boxes[a] === this.boxes[b] &&
