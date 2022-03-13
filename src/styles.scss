@@ -7,8 +7,7 @@ $font-color: #000;
   body {
     font-size: calc(1em + (1.3125 - 1) * ((100vw - 20em) / (80 - 20)));
     line-height: calc(1.4em + (1.8 - 1.4) * ((100vw - 20em) / (80 - 20)));
-    font-family: sans-serif, Arial, Helvetica;
-    margin: 2em;
+    font-family: cursive, sans-serif, Arial, Helvetica;
   }
 }
 
@@ -17,8 +16,7 @@ $font-color: #000;
   body {
     font-size: 1.375em; //now 1.3125em fr 21px.. for 22px => 1.375em
     line-height: 1.8em;
-    font-family: sans-serif, Arial, Helvetica;
-    margin: 2em;
+    font-family: cursive, sans-serif, Arial, Helvetica;
   }
 }
 
@@ -31,6 +29,7 @@ body {
   background: $background-color;
   color: $font-color;
   height: 100%;
+  margin: 0;
 }
 
 .disable-selection {

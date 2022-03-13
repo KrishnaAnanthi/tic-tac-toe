@@ -46,7 +46,7 @@ $box-shadow-color: rgb(0 0 0 / 35%);
   .box-button {
     font-size: calc(2em + (1.3125 - 1) * ((100vw - 20em) / (80 - 20)));
     line-height: calc(1.4em + (1.8 - 1.4) * ((100vw - 20em) / (80 - 20)));
-    font-family: sans-serif, Arial, Helvetica;
+    font-family: cursive, sans-serif, Arial, Helvetica;
   }
 }
 
@@ -55,6 +55,6 @@ $box-shadow-color: rgb(0 0 0 / 35%);
   .box-button {
     font-size: 3em;
     line-height: 1.8em;
-    font-family: sans-serif, Arial, Helvetica;
+    font-family: cursive, sans-serif, Arial, Helvetica;
   }
 }
